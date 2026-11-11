@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>COVID-19 en Boyacá — análisis mensual</title>
+<style>
+body{font:16px/1.6 system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;color:#203333;background:#f5f8f7}h1,h2{color:#164e50}.cards{display:flex;gap:1rem;flex-wrap:wrap}.card{background:white;border-radius:10px;padding:1rem 1.3rem;box-shadow:0 2px 12px #153b3b18;min-width:220px}.card span,.card strong{display:block}.card strong{font-size:1.4rem;margin-top:.4rem}figure{background:white;padding:1rem;border-radius:10px}figure img{max-width:100%;height:auto}.note{border-left:4px solid #d79a32;padding:.6rem 1rem;background:#fff8e9}footer{margin-top:2rem;border-top:1px solid #ccd8d5;padding-top:1rem}
+</style></head><body>
+<h1>Casos positivos de COVID-19 en Boyacá</h1>
+<p><b>Pregunta:</b> ¿Cómo evolucionó mes a mes el número de casos reportados durante el periodo seleccionado?</p>
+<p><b>Departamento:</b> Boyacá · <b>Periodo:</b> 2020-03 a 2024-01 · <b>Fecha analizada:</b> fecha reporte web · <b>Conteo:</b> IDs de caso únicos</p>
+<section class="cards" aria-label="Indicadores"><article class="card"><span>Casos únicos en el periodo</span><strong>131,133</strong></article>
+<article class="card"><span>Mes pico</span><strong>2021-06: 22,400 casos</strong></article></section>
+<h2>Hallazgo</h2><p>El mes con más casos fue 2021-06 (22400). La mayor variación porcentual mensual en valor absoluto ocurrió en 2022-01 (+1751.1%).</p>
+<h2>Evolución mensual</h2><figure><img src="graficos/casos-mensuales.png" alt="Gráfico de línea de casos únicos reportados por mes"></figure>
+<h2>Distribución por sexo</h2><p>Gráfico categórico de otra columna disponible en el CSV; los faltantes se muestran como “Sin dato”.</p><figure><img src="graficos/casos-por-sexo.png" alt="Gráfico de barras horizontales de casos únicos por sexo"></figure>
+<h2>Limitaciones y limpieza</h2><ul><li>El conteo usa IDs de caso únicos; si un ID aparece repetido, se asigna al primer mes con fecha de reporte válida.</li>
+<li>Se excluyeron 0 filas del archivo con fecha de reporte vacía o inválida, además de registros sin ID válido o sin fecha tras filtrar Boyacá.</li>
+<li>Se detectaron 0 filas de Boyacá implicadas en IDs repetidos antes de deduplicar.</li>
+<li>La fecha usada es fecha reporte web (publicación en el sitio web), no fecha de diagnóstico ni fecha de inicio de síntomas.</li>
+<li>Los reportes pueden tener retrasos, correcciones y cambios en la vigilancia/pruebas; los conteos no equivalen necesariamente a incidencia real.</li>
+<li>La descripción del portal advierte incertidumbre epidemiológica y actualizaciones/correcciones de la publicación.</li>
+<li>Los meses sin registros válidos se muestran como cero; esto no demuestra ausencia real de casos.</li></ul>
+<p>El filtro departamental ignora diferencias de acentos, caja y espacios. Las fechas no interpretables y los registros sin fecha o ID válido no entran al conteo. Los datos faltantes de sexo se conservan como categoría “Sin dato”.</p>
+<footer><b>Fuente:</b> <a href="https://www.datos.gov.co/Salud-y-Protecci-n-Social/Casos-positivos-de-COVID-19-en-Colombia-/gt2j-8ykr/about_data" rel="noopener noreferrer">Portal Nacional de Datos Abiertos — INS, Casos positivos de COVID-19 en Colombia</a>.<br>
+CSV leído: <code>modulo-01\Proyectos\Casos_positivos_de_COVID-19_en_Colombia._20261110.csv</code>. Tablero generado localmente por <code>analisis.py</code>.</footer>
+</body></html>
