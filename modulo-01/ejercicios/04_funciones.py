@@ -20,3 +20,4 @@ print("Horas del módulo:", calcular_total(2, 4))
 
 print("Progreso (3 de 4):", calcular_progreso(3, 4))
 print("Progreso (0 de 0):", calcular_progreso(0, 0))
+
