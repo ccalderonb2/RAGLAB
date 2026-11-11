@@ -24,7 +24,7 @@ response = client.chat.completions.create(
     messages=[
         {
             "role": "user",
-            "content": "Explica en una frase qué es un sistema RAG, para alguien que empieza.",
+            "content": "Universidades de Colombia donde dan maestria en analitica de datos.",
         }
     ],
     max_tokens=120,
